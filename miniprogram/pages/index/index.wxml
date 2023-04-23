@@ -1,0 +1,76 @@
+<!--首页布局-->
+<view class="container">
+  <!--顶部下拉菜单-->
+  <view class="dropdown-menu">
+    <picker mode="selector" range="{{merchants}}" bindchange="onMerchantChange">
+      <view class="menu-text">{{selectedMerchant}}</view>
+    </picker>
+  </view>
+  
+  <!--四大板块-->
+  <view class="category">
+    <view class="category-item" bindtap="navigateToCleaning">
+      <image src="../../images/outline.png" class="category-icon" />
+      <text class="category-text">健康管理</text>
+    </view>
+    <view class="category-item" bindtap="navigateToLaundry">
+      <image src="../../images/outline.png" class="category-icon" />
+      <text class="category-text">饮食管理</text>
+    </view>
+    <view class="category-item" bindtap="navigateToAppliance">
+      <image src="../../images/outline.png" class="category-icon" />
+      <text class="category-text">保洁服务</text>
+    </view>
+    <view class="category-item" bindtap="navigateToLife">
+      <image src="../../images/outline.png" class="category-icon" />
+      <text class="category-text">社交活动</text>
+    </view>
+  </view>
+  
+  <!--服务样式-->
+  <view class="service">
+    <view class="service-item" bindtap="navigateToDailyCleaning">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">日常保洁</text>
+    </view>
+    <view class="service-item" bindtap="navigateToWindowCleaning">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">擦玻璃</text>
+    </view>
+    <view class="service-item" bindtap="navigateToDeepCleaning">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">开荒保洁</text>
+    </view>
+    <view class="service-item" bindtap="navigateToCooking">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">做饭保姆</text>
+    </view>
+    <view class="service-item" bindtap="navigateToGrocery">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">代购服务</text>
+    </view>
+    <view class="service-item" bindtap="navigateToPrevent">
+      <image src="../../images/avatar/police.svg" class="service-icon" />
+      <text class="service-text">防诈骗</text>
+    </view>
+    <view class="service-item" bindtap="navigateToDelivery">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">送货服务</text>
+    </view>
+    <view class="service-item" bindtap="navigateToOthers">
+      <image src="../../images/outline.png" class="service-icon" />
+      <text class="service-text">其他服务</text>
+    </view>
+  </view>
+
+    <!--通知栏-->
+  <view class="notice">
+    <swiper autoplay interval="3000">
+      <block wx:for="{{notices}}">
+        <swiper-item>
+          <text class="notice-text">{{item}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
