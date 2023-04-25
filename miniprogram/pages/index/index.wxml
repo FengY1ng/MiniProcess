@@ -11,7 +11,7 @@
   <view class="category">
     <view class="category-item" bindtap="navigateToCleaning">
       <image src="../../images/outline.png" class="category-icon" />
-      <text class="category-text">健康</text>
+      <text class="category-text">健康管理</text>
     </view>
     <view class="category-item" bindtap="navigateToLaundry">
       <image src="../../images/outline.png" class="category-icon" />
