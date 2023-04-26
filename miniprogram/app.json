@@ -20,6 +20,37 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "selectedColor": "e64a19",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/outline.png",
+        "selectedIconPath": "images/outline.png"
+      },
+      {
+        "pagePath": "pages/uploadFile/index",
+        "text": "分类",
+        "iconPath": "images/outline.png",
+        "selectedIconPath": "images/outline.png"
+      },
+      {
+        "pagePath": "pages/deployService/index",
+        "text": "客服咨询",
+        "iconPath": "images/outline.png",
+        "selectedIconPath": "images/outline.png"
+      },
+      {
+        "pagePath": "pages/getOpenId/index",
+        "text": "个人空间",
+        "iconPath": "images/outline.png",
+        "selectedIconPath": "images/outline.png"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }

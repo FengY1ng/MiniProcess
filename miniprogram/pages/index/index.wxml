@@ -1,4 +1,5 @@
 <!--首页布局-->
+
 <view class="container">
   <!--顶部下拉菜单-->
   <view class="dropdown-menu">
@@ -9,22 +10,30 @@
   
   <!--四大板块-->
   <view class="category">
-    <view class="category-item" bindtap="navigateToCleaning">
-      <image src="../../images/outline.png" class="category-icon" />
-      <text class="category-text">健康管理</text>
-    </view>
-    <view class="category-item" bindtap="navigateToLaundry">
-      <image src="../../images/outline.png" class="category-icon" />
-      <text class="category-text">饮食管理</text>
-    </view>
-    <view class="category-item" bindtap="navigateToAppliance">
-      <image src="../../images/outline.png" class="category-icon" />
-      <text class="category-text">保洁服务</text>
-    </view>
-    <view class="category-item" bindtap="navigateToLife">
-      <image src="../../images/outline.png" class="category-icon" />
-      <text class="category-text">社交活动</text>
-    </view>
+    <navigator url="#">
+      <view class="category-item" bindtap="navigateToCleaning">
+        <image src="../../images/outline.png" class="category-icon" />
+        <text class="category-text">健康管理123</text>
+      </view>
+    </navigator>
+    <navigator url="x">
+      <view class="category-item" bindtap="navigateToLaundry">
+        <image src="../../images/outline.png" class="category-icon" />
+        <text class="category-text">饮食管理</text>
+      </view>
+    </navigator>
+    <navigator url="#">
+      <view class="category-item" bindtap="navigateToAppliance">
+        <image src="../../images/outline.png" class="category-icon" />
+        <text class="category-text">保洁服务</text>
+      </view>
+    </navigator>
+    <navigator url="#">
+      <view class="category-item" bindtap="navigateToLife">
+        <image src="../../images/outline.png" class="category-icon" />
+        <text class="category-text">社交活动</text>
+      </view>
+    </navigator>
   </view>
   
   <!--服务样式-->
