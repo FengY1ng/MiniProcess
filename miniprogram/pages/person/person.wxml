@@ -1,0 +1,30 @@
+<view class="personal-center">
+
+  <!--上方背景图-->
+  <view class="personal-bg" style="background-image: url({{bgImg}})">
+    <view class="personal-avatar">
+      <image class="user_bg" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+      <button class="user_btn" wx:if="{{!userInfo}}" bindtap="login">登录</button>
+      <view class="root" wx:else>
+        <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        <text class="name">{{userInfo.nickName}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--下方个人信息-->
+  <view class="personal-info">
+    <view class="personal-info-item">
+      <view class="personal-info-title">手机号码</view>
+      <view class="personal-info-value">{{userInfo.phone}}</view>
+    </view>
+    <view class="personal-info-item">
+      <view class="personal-info-title">身份证号码</view>
+      <view class="personal-info-value">{{userInfo.idCard}}</view>
+    </view>
+    <view class="personal-info-item">
+      <view class="personal-info-title">家庭住址</view>
+      <view class="personal-info-value">{{userInfo.address}}</view>
+    </view>
+  </view>
+</view>

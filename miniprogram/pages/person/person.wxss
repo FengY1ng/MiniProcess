@@ -1,0 +1,130 @@
+/**********
+个人信息
+**********/
+
+.information{
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #00c448;
+ overflow: hidden;
+}
+
+.user_img_wrap{
+  position: relative;
+}
+
+.user_bg{
+  width: 750rpx;
+  height: 45vh;
+  filter: blur(10rpx);
+}
+
+.user_btn{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1rpx solid greenyellow;
+  color: greenyellow;
+  font-size: 38rpx;
+}
+
+button{
+  color: #ffffff;
+  text-align: left;
+  background: linear-gradient(-45deg, rgba(0, 128, 0, 0.863) 0%, lightgreen 100%);
+  width: 350rpx;
+  height:35px;
+  line-height: 40rpx;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+
+.avatar{
+  width:155rpx;
+  height: 155rpx;
+  border-radius: 50%;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.name{
+  color:white;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+
+.personal-center {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-bg {
+  width: 90%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  background-size: cover;
+  background-position: center;
+}
+
+.personal-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.personal-name {
+  margin-top: 10rpx;
+  font-size: 16rpx;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.personal-info {
+  width: 90%;
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+
+.personal-info-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.personal-info-title {
+  width: 100rpx;
+  font-size: 14rpx;
+  color: #999999;
+}
+
+.personal-info-value {
+  flex: 1;
+  font-size: 14rpx;
+  color: #333333;
+  text-align: right;
+}

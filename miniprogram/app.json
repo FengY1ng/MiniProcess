@@ -11,7 +11,8 @@
     "pages/updateRecordResult/index",
     "pages/updateRecordSuccess/index",
     "pages/sumRecord/index",
-    "pages/sumRecordResult/index"
+    "pages/sumRecordResult/index",
+    "pages/person/person"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -44,7 +45,7 @@
         "selectedIconPath": "images/outline.png"
       },
       {
-        "pagePath": "pages/getOpenId/index",
+        "pagePath": "pages/person/person",
         "text": "个人空间",
         "iconPath": "images/outline.png",
         "selectedIconPath": "images/outline.png"
