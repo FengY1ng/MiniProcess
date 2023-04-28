@@ -13,7 +13,7 @@
     <navigator url="#">
       <view class="category-item" bindtap="navigateToCleaning">
         <image src="../../images/outline.png" class="category-icon" />
-        <text class="category-text">健康管理</text>
+        <text class="category-text">健康管理test</text>
       </view>
     </navigator>
     <navigator url="x">
