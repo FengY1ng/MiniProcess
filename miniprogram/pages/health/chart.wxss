@@ -1,0 +1,24 @@
+/* chart.wxss */
+.chart {
+  padding: 20rpx;
+  background: linear-gradient(to bottom, #4A90E2, #398DD1);
+  color: white;
+}
+
+.chart-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.chart-tab {
+  font-size: 28rpx;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chart-tab.active {
+  color: white;
+  border-bottom: 3rpx solid
+}

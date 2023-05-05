@@ -1,0 +1,11 @@
+<!-- chart.wxml -->
+<view class="chart">
+  <view class="chart-tabs">
+    <view class="chart-tab" wx:for="{{chartTabs}}" wx:key="{{index}}" bindtap="onTabClick" data-tab="{{item}}" class="{{item.active ? 'active' : ''}}">{{item.title}}</view>
+  </view>
+  <view class="chart-content">
+    <echarts class="chart-item" ec="{{ec}}" canvas-id="step-chart" wx:if="{{chartTabs[currentTab].id === 'step'}}"></echarts>
+    <echarts class="chart-item" ec="{{ec}}" canvas-id="heart-chart" wx:if="{{chartTabs[currentTab].id === 'heart'}}"></echarts>
+    <echarts class="chart-item" ec="{{ec}}" canvas-id="temp-chart" wx:if="{{chartTabs[currentTab].id === 'temp'}}"></echarts>
+  </view>
+</view>

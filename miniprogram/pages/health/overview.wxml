@@ -1,0 +1,32 @@
+<!-- overview.wxml -->
+<view class="overview">
+
+  <!--标题-->
+  <view class="overview-title">健康总览</view>
+
+  <!--概览-->
+  <view class="overview-content">
+    <view class="overview-item">
+      <view class="overview-item-title">步数</view>
+      <view class="overview-item-value">{{stepCount}}</view>
+    </view>
+    <view class="overview-item">
+      <view class="overview-item-title">心率</view>
+      <view class="overview-item-value">{{heartRate}}</view>
+    </view>
+    <view class="overview-item">
+      <view class="overview-item-title">体温</view>
+      <view class="overview-item-value">{{bodyTemp}}</view>
+    </view>
+  </view>
+
+  <!--小tips-->
+  <view class="overview-tips">{{tips}}</view>
+
+  <!--服务-->
+  <view class="overview-service">
+    <view class="overview-service-content"></view>
+    <view class="overview-service-content"></view>
+  </view>
+
+</view>

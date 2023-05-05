@@ -1,22 +1,24 @@
+
 Page({
   data: {
     merchants: ["商户1", "商户2", "商户3"],
     selectedMerchant: "请选择服务商户",
-    notices: ["通知1", "通知2", "通知3"]
+    notices: ["通知1"]
+    
   },
   onMerchantChange: function (event) {
     this.setData({
       selectedMerchant: this.data.merchants[event.detail.value]
     })
   },
-  navigateToCleaning: function () {
+  navigateToHealth: function () {
     wx.navigateTo({
-      url: "/pages/cleaning/cleaning"
+      url: "/pages/health/overview"
     })
   },
   navigateToLaundry: function () {
     wx.navigateTo({
-      url: "/pages/laundry/laundry"
+      url: "/pages/health/chart"
     })
   },
   navigateToAppliance: function () {
@@ -49,6 +51,7 @@ Page({
       url: "/pages/cooking/cooking"
     })
   },
+  
   navigateToGrocery: function () {
     wx.navigateTo({
       url: "/pages/grocery/grocery"

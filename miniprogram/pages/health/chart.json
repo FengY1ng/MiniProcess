@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "居家养老服务",
+  "navigationBarTitleText": "步数详情",
   "usingComponents": {
     "ec-canvas":"../../components/ec-canvas/ec-canvas"
   }

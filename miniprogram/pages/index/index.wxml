@@ -11,9 +11,9 @@
   <!--四大板块-->
   <view class="category">
     <navigator url="#">
-      <view class="category-item" bindtap="navigateToCleaning">
+      <view class="category-item" bindtap="navigateToHealth">
         <image src="../../images/outline.png" class="category-icon" />
-        <text class="category-text">健康管理test</text>
+        <text class="category-text">健康管理</text>
       </view>
     </navigator>
     <navigator url="x">
@@ -59,7 +59,7 @@
       <text class="service-text">代购服务</text>
     </view>
     <view class="service-item" bindtap="navigateToPrevent">
-      <image src="../../images/avatar/police.svg" class="service-icon" />
+      <image src="../../images/outline.png" class="service-icon" />
       <text class="service-text">防诈骗</text>
     </view>
     <view class="service-item" bindtap="navigateToDelivery">
@@ -72,14 +72,13 @@
     </view>
   </view>
 
-    <!--通知栏-->
+  <!--通知栏-->
   <view class="notice">
     <swiper autoplay interval="3000">
-      <block wx:for="{{notices}}">
-        <swiper-item>
-          <text class="notice-text">{{item}}</text>
-        </swiper-item>
+      <block wx:for="{{notices}}" wx:key="index">
+         <!-- <image class="notice-image" src="{{item}}"></image>-->
       </block>
     </swiper>
   </view>
+
 </view>
